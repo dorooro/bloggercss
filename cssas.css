@@ -1,0 +1,55 @@
+/*viw*/
+.svgview_hiru{display:flex;align-items:center;gap:0 6px;float:left;margin:7px 0 0 4px}.svgview_hiru svg{width:16px;height:16px}.svgview_hiru svg path{fill:#222}
+.dark-mode .svgview_hiru{color:#999}
+.dark-mode .svgview_hiru svg path{fill:#999}
+/*btn-sm*/
+.synopsis-link{display:flex;flex-wrap:wrap;}
+.synopsis-link a{background: #8c51d3; color: #fff; padding: 10px 30px; border-radius: 25px; font-size: 13px; cursor: pointer; /* margin: 20px; */ text-decoration: none;}
+.synopsis-container {visibility: hidden; opacity: 0; transition: all 0.3s ease-in-out; transform: scale(1.3); position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(21, 17, 17, 0.61); display: flex; align-items: center;}
+.synopsis-content {background-color: #fefefe; margin: auto; padding: 20px; border-radius: 15px; border: 1px solid #888; width: 50%;}
+.synopsis-content p{font-size: 12px; padding: 10px; line-height: 25px; overflow: auto; max-height: 300px;}
+.synopsis-content a.close{color: #aaa; float: right; font-size: 28px; font-weight: bold; background: none; padding: 0; margin: 0; text-decoration:none;}
+.popup-content a.close:hover{color:#333;}
+.synopsis-content span:hover,.synopsis-content span:focus {color: #000;text-decoration: none;cursor: pointer;}
+.synopsis-container:target{visibility: visible; opacity: 1; transform: scale(1);}
+.synopsis-container h3{margin:10px;}
+  @media screen and (max-width: 700px){.synopsis-content{width: 90%;}}
+/**/
+#topbar {position:fixed; top: -60px; left:0; right:0; display: block; z-index: 99999; box-sizing: border-box; width: 100%; padding: 10px; background-color: #c0392b; color: #fff; font-size:18px; text-align: center; -webkit-box-shadow: 0 8px 6px -6px black; -moz-box-shadow: 0 8px 6px -6px black; box-shadow: 0 8px 6px -6px black; transition: top 1s;}
+#toggleTop {display: none;}
+#hideTop {float: right;display: inline-block;} 
+#toggleTop:checked + #topbar {transition: top 1s;top:0px;}
+/*ds*/
+.discord {background-color: #26282f;border: 0;border-radius: 15px;padding: 10px 15px;color: #fff;}
+.dc-wdgt {width: 100%;margin: 0;background-color: transparent;}
+.dc-hdr {position: relative;height: 70px;padding: 15px 10px;background-color: transparent;border-top-right-radius: 5px;border-top-left-radius: 5px;}
+.dc-body {padding-left: 20px;padding-right: 20px;height: 100%;position: relative;}
+.dc-logo {margin: 10px 10px;background-image: url("https://i.imgur.com/PXzikWE.png");background-size: 75%;width: 140px;height: 60px;background-repeat: no-repeat;transform-origin: left;filter: contrast(1.1);margin-bottom: 10px;}
+.dc-lst {position: relative; width: 100%; height: 65%; max-height: 210px; display: inline-block; overflow: auto; margin-top: 20px; margin-bottom: 20px; overflow: -moz-scrollbars-vertical; overflow-y: scroll;}
+.dc-lst::-webkit-scrollbar {width: 10px;}
+.dc-lst::-webkit-scrollbar-track {background-color: #7289da;border-radius: 10px;}
+.dc-lst::-webkit-scrollbar-thumb {background-color: #3b4773;border-radius: 4px;}
+.dc-lst::-webkit-scrollbar-thumb:hover {background: #3b4773;}
+.dc-lst-sts,.dc-lst-lbl {  display: inline-block;margin-bottom: 5px;}
+.dc-lst-lbl:before {content: "أعضاء الديسكورد";font-size: 12px;font-weight: bold;}
+#members-count {font-size: 14px;font-weight: 800;display: inline-block;position: absolute;top: calc(50% - 10px);right: 10px;}
+#members-list img {width: 15px;border-radius: 50%;}
+.member-avatar {padding-right: 5px;}
+#members-list td.member-name {font-size: 14px;max-width: 180px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.dc-cta {border-bottom: 3px solid #7289da;border-top: none;border-left: none;border-right: none;background-color: #7289da;padding: 12px 25px;color: #fff !important;border-radius: 4px;font-size: 16px;text-transform: uppercase;font-weight: bold;text-align: center;width: 100%;max-height: 45px;margin-bottom: 10px;transition: 0.3s;}
+.dc-cta:hover {background-color: #8ea1e1;border-bottom: 3px solid #8ea1e1;transition: 0.3s;color: #fff !important;}
+.dc-cta:after {content: "إنضم لمجتمعنا";}
+/*ntc2*/
+ @keyframes glowing {0% {box-shadow: 0 0 5px $(keycolor);}50% { box-shadow: 0 0 6px $(keycolor), 0 0 20px $(keycolor); } 100% { box-shadow: 0 0 5px $(keycolor); } }    .important-message {border: 3px solid $(keycolor); border-radius:8px !important; padding: 20px; margin: 20px auto; max-width: 100%; font-size: 18px !important; text-align: right; position: relative; width: 100%; animation: glowing 1.5s infinite;background-image: url('https://moewalls.com/wp-content/uploads/2023/04/manga-anime-collection-thumb.jpg');}
+.important-message::before {content: ""; border-right: 10px solid $(keycolor);background: rgb(0 0 0 / 61%); position: absolute; top: 0; bottom: 0;left:0;right: 0;}
+.message-title {font-weight: bold;color: $(keycolor);}
+.message-content {font-size: 0.9rem;line-height: 2.0;}
+.message-title .title {color: #fffdab !important;font-size: 20px !important;border: none !important;margin-bottom: 15px !important;line-height: 1.8;}
+
+/*btn coin*/
+.Btn_coin{width:130px;height:40px;display:flex;align-items:center;justify-content:center;background-color:#f1f1f1;border:1px solid #222;color:#222;font-weight:600;gap:8px;cursor:pointer;box-shadow:5px 5px 10px rgba(0,0,0,0.103);position:relative;overflow:hidden;transition-duration:.3s;border-radius:5px;}
+.Btn_coinsvgIcon{width:16px;}
+.Btn_coinsvgIcon path{fill:#222;}
+.Btn_coin::before{width:100%;height:130px;position:absolute;content:"";background-color:white;border-radius:50%;left:-100%;top:0;transition-duration:.3s;mix-blend-mode:difference;}
+.Btn_coin:hover::before{transition-duration:.3s;transform:translate(100%,-50%);border-radius:0;}
+.Btn_coin:active{transform:translate(5px,5px);transition-duration:.3s;}
